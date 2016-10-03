@@ -16,23 +16,23 @@ public class ArithmeticExpression {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
+		Scanner Scan = new Scanner(System.in);
 		
 		int num1;
 		System.out.println("Enter 5 numbers.");
-		num1= scan.nextInt();
+		num1= Scan.nextInt();
 		
 		int num2;
-		num2= scan.nextInt();
+		num2= Scan.nextInt();
 		
 		int num3;
-		num3= scan.nextInt();
+		num3= Scan.nextInt();
 		
 		int num4;
-		num4= scan.nextInt();
+		num4= Scan.nextInt();
 		
 		int num5;
-		num5= scan.nextInt();
+		num5= Scan.nextInt();
 		System.out.println("The sum of all five numbers is: " + (num1+num2+num3+num4+num5));
 		System.out.println("The result after subtracting the second number from the third is: " + (num2-num3));
 		System.out.println("The product of the first and fifth number is: " + (num1*num5));
