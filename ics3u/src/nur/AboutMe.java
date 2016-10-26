@@ -6,6 +6,7 @@ package nur;
 /**
  * AboutMe.java
  * @author Halima Nur
+ * This program shows my Timetable
  * Created September 13th 2016
  */
 public class AboutMe {

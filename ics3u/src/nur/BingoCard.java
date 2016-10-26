@@ -1,7 +1,19 @@
+/**
+ * 
+ */
 package nur;
 
+/**
+ * Bingocard.java
+ * Halima Nur
+ * September 14th 2016
+ *This program shows a finished bingo card.
+ */
 public class BingoCard {
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
 		System.out.format("%4s %4s %4s %4s %4s","B", "I", "N", "G", "O\n");
@@ -10,14 +22,6 @@ public class BingoCard {
 		System.out.format("%4s %4s %4s %4s %4s","5", "18", "Free", "53", "67\n");
 		System.out.format("%4s %4s %4s %4s %4s","12", "16", "31", "46", "75\n");
 		System.out.format("%4s %4s %4s %4s %4s", "10", "22", "39", "59", "71\n");
-		
-				
-				
-			
-				
-				
-		
-
 	}
 
 }

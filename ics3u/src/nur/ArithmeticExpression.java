@@ -13,6 +13,10 @@ import java.util.Scanner;
 public class ArithmeticExpression {
 
 	/**
+	 * Halima Nur
+	 * ArithmeticExpression.java
+	 * September 30th 2016
+	 * This program writes down the number you put does the calculations and tells you. 
 	 * @param args
 	 */
 	public static void main(String[] args) {

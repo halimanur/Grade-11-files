@@ -7,7 +7,10 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
- * @author 333524585
+ * Halima Nur
+ * September 30th 1016
+ * OrderApplication.java
+ * This program give you the price of the food you purchase.
  *
  */
 public class OrderApplication {

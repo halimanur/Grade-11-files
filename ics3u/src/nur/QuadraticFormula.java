@@ -7,6 +7,8 @@ import java.util.Scanner;
 /**
  * @author halima nur
  * September 30th, 2016
+ * QuadraticFormula.java
+ * This program gives you the answer to a quadratic equation.
  *
  */
 public class QuadraticFormula {
