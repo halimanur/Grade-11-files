@@ -7,7 +7,8 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
- * @author 333524585
+ * halima nur	
+ * nov 2nd 2016
  *
  */
 public class DozenEggs {
@@ -18,34 +19,37 @@ public class DozenEggs {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		DecimalFormat df= new DecimalFormat ("0.00");
+		double egg;
 		
-		int dozen;
-		double price = 0.0; 
-		int Eggs;
+		System.out.println("Enter number of eggs."); egg = scan.nextDouble();
+		egg= egg/12;
 		
-
-		System.out.println("Enter number of eggs being purchased.");
-		dozen= scan.nextInt();
+		{
+		if (egg>=11){
+		System.out.println("Price per dozen eggs is $0.35");
+		System.out.println("you total is: "  + (df.format (0.35*egg)));
+	    }
 	
-		if (dozen>4){
-			price= 0.50;
+	    else if (egg>=6){
+		System.out.println("Price per dozen is $0.40");	
+		System.out.println("you total is: " + (df.format (0.40*egg)));
+		}
+	    
+	    else if (egg>=4){
+	    System.out.println("Price per dozen is 0.45");	
+	    System.out.println("you total is: " + (df.format(0.45*egg)));
 	    }
 		
-		else if(dozen>6){
-			price= 0.45;
-		}
+	    else{
+	    	System.out.println("Price per dozen eggs is: $0.50");
+	    	System.out.println("your total is : " +(df.format(egg*0.50)));		
+
+	    }
+	    
+	    }
 		
-		else if(dozen>11){
-			price= 0.40;
-		}
-		
-		else if(dozen<11){
-			price= 0.35;
-		}
-		
-		System.out.println("Price is " + price);
-		System.out.println("you total is: "  + df.format (price*dozen));
-		System.out.println(");
+	    
+	   
 
 }
 }
