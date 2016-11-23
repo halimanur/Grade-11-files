@@ -28,8 +28,6 @@ public class GuessingGame2 {
 		System.out.println("Enter a number between 1 and 20:");
 		num= scan.nextInt();
 
-		
-		 
 		if (num==guesses){
 			System.out.println("You Won!");
 		counter= 2;

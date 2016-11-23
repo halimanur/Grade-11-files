@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Halima Nur
  * Random.java
  * November 09 2016
- *This program 
+ *This program rolls a die and tells you if you won, lost or if its a tie.
  */
 public class Random2 {
 
