@@ -7,10 +7,8 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
- * Halima Nur
- * November 23 2016
- *ElaspsedTimeCalculator.java
- *This program will give you the time it is.
+ * Halima Nur November 23 2016 ElaspsedTimeCalculator.java This program will
+ * give you the time it is.
  */
 public class ElaspsedTimeCalculator {
 
@@ -19,36 +17,40 @@ public class ElaspsedTimeCalculator {
 	 */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		DecimalFormat df= new DecimalFormat ("0");
+		DecimalFormat df = new DecimalFormat("0.00");
 
 		int hour;
 		String time;
 		int elapsed;
 		double price = 0.0;
 
-		
-		
 		System.out.println("Enter the starting hour:");
-		hour= scan.nextInt();
+		hour = scan.nextInt();
+		scan.nextLine();
 
 		System.out.println("Enter am or pm:");
-		time= scan.nextLine();
+		time = scan.nextLine();
 		scan.nextLine();
-			
+
 		System.out.println("Enter the amount of elapsed hours:");
-		elapsed= scan.nextInt();
-		
-		if (hour+elapsed>=12){
-			if(time.equals("am"));
-			
-		System.out.println("The time is: "+ df.format(hour +elapsed -12 ) +time);}
-	
-		
-		
-		
-		
+		elapsed = scan.nextInt();
+
+		if (hour + elapsed > 12) {
+			if (time.equals("am")) {
+				System.out.println("The time is: " + df.format(hour + elapsed - 12) + "am");
+			}
+			if (time.equals("pm")) {
+				System.out.println("The time is: " + df.format(hour + elapsed - 12) + "pm");
+			}
+
+		} else {
+			if (time.equals("am"))
+				System.out.println("The time is: " + df.format(hour + elapsed) + "am");
+
+			else if (time.equals("pm"))
+				System.out.println("The time is:" + df.format(hour + elapsed) + "pm");
+
 		}
 
 	}
-
-
+}
